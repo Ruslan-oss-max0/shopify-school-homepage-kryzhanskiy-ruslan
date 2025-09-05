@@ -1,0 +1,19 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+
+  &--menu {
+    background-image: url("/images/icons/menu-icon.svg");
+  }
+
+  &--cart {
+    background-image: url("/images/icons/cart-icon.svg");
+  }
+
+  &--close {
+    background-image: url("/images/icons/close.svg");
+  }
+}
