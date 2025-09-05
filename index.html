@@ -4,23 +4,155 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopify School</title>
-    <script type="module" crossorigin src="/shopify-school-homepage-kryzhanskiy-ruslan/assets/index-CcBelV4S.js"></script>
-    <link rel="stylesheet" crossorigin href="/shopify-school-homepage-kryzhanskiy-ruslan/assets/index-tn0RQdqM.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/shopify-school-homepage-kryzhanskiy-ruslan/assets/index-BDwwYPRK.js"></script>
+    <link rel="stylesheet" crossorigin href="/shopify-school-homepage-kryzhanskiy-ruslan/assets/index-hM_HU_l6.css">
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__logo">
+      <div class="header__left">
         <a class="header__img-link" href="#">
           <img
-            class="header__img"
+            class="header__logo"
             src="/shopify-school-homepage-kryzhanskiy-ruslan/images/icons/logo.svg"
             alt="Logo Icon"
           />
         </a>
+
+        <a class="header__menu icon--menu icon" href="#menu"></a>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">New & Featured</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Men</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Women</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Kids</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__right">
+        <a class="header__cart icon--cart icon" href="#"></a>
       </div>
     </header>
 
-    <main class="main"></main>
+    <aside class="page__menu menu" id="menu">
+      <div class="menu__top">
+        <a class="header__img-link" href="#">
+          <img
+            style="display: block !important"
+            class="header__logo"
+            src="/shopify-school-homepage-kryzhanskiy-ruslan/images/icons/logo.svg"
+            alt="Logo Icon"
+          />
+        </a>
+
+        <a class="menu__close icon--close icon" href="#"></a>
+      </div>
+
+      <div class="menu__bottom">
+        <nav class="menu__nav">
+          <ul class="menu__nav-list">
+            <li class="menu__nav-item">
+              <a href="#" class="menu__nav-link">Home</a>
+            </li>
+            <li class="menu__nav-item">
+              <a href="#featured-collection" class="menu__nav-link"
+                >Featured Collection</a
+              >
+            </li>
+            <li class="menu__nav-item">
+              <a href="#faq" class="menu__nav-link"
+                >Frequently asked questions</a
+              >
+            </li>
+            <li class="menu__nav-item">
+              <a href="#highly-rated" class="menu__nav-link">Highly Rated</a>
+            </li>
+            <li class="menu__nav-item">
+              <a href="#help" class="menu__nav-link">Help</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__slider swiper">
+          <div class="hero__slider-wrapper swiper-wrapper">
+            <div class="hero__slide swiper-slide slide-1">
+              <div class="hero__slide-content">
+                <div class="hero__slide-wrapper">
+                  <h1 class="hero__slide-title title">
+                    More than just shoes — it’s a part of your story.
+                  </h1>
+                  <p class="hero__slide-text text">
+                    Original sneakers from Nike and other top brands that make
+                    every stepfeel special.
+                  </p>
+                  <buttun class="hero__slide-button button"
+                    >Shop the Collection</buttun
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__slide swiper-slide slide-2">
+              <div class="hero__slide-content">
+                <div class="hero__slide-wrapper">
+                  <h1 class="hero__slide-title title">
+                    More than just shoes — it’s a part of your story.
+                  </h1>
+                  <p class="hero__slide-text text">
+                    Original sneakers from Nike and other top brands that make
+                    every stepfeel special.
+                  </p>
+                  <buttun class="hero__slide-button button"
+                    >Shop the Collection</buttun
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__slide swiper-slide slide-3">
+              <div class="hero__slide-content">
+                <div class="hero__slide-wrapper">
+                  <h1 class="hero__slide-title title">
+                    More than just shoes — it’s a part of your story.
+                  </h1>
+                  <p class="hero__slide-text text">
+                    Original sneakers from Nike and other top brands that make
+                    every stepfeel special.
+                  </p>
+                  <buttun class="hero__slide-button button"
+                    >Shop the Collection</buttun
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hero__slider-pagination swiper-pagination"
+            aria-label="Hero slider pagination"
+          ></div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer"></footer>
 
