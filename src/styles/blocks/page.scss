@@ -12,9 +12,9 @@
     min-width: 320px;
     box-sizing: border-box;
 
-    &:has([id="menu"]:target) {
-      overflow: hidden;
-    }
+    // &:has([id="menu"]:target) {
+    //   overflow: hidden;
+    // }
   }
 
   &__menu {
@@ -34,4 +34,11 @@
       transform: translateX(0);
     }
   }
+}
+
+.container {
+  max-width: $container-size;
+  padding: 0 $container-padding;
+  margin: 0 auto;
+  width: 100%;
 }
