@@ -39,3 +39,14 @@ const futureCollectionSlider = new Swiper(".featured-collection__slider", {
     },
   },
 });
+
+document.querySelectorAll(".faq__item").forEach((item) => {
+  const question = item.querySelector(".faq__question");
+  const toggle = item.querySelector(".faq__toggle");
+  const answer = item.querySelector(".faq__answer");
+
+  question.addEventListener("click", () => {
+    answer.classList.toggle("active");
+    toggle.classList.toggle("active");
+  });
+});

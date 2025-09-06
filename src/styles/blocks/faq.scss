@@ -1,0 +1,70 @@
+.faq {
+  padding: 60px 16px;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__top {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin: 0 0 16px 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__text {
+    margin: 0;
+    color: $secondary-color;
+  }
+
+  &__item {
+    width: 100%;
+    background-color: $prime-color;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  &__question {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &-value {
+      margin: 0;
+    }
+  }
+
+  &__toggle {
+    width: 15px;
+    height: 15px;
+    background-image: url("/images/icons/plus-circle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &.active {
+      background-image: url("/images/icons/minus-circle.svg");
+    }
+  }
+
+  &__answer {
+    padding: 0 24px 24px 24px;
+    display: none;
+    color: $secondary-color;
+
+    &-value {
+      margin: 0;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+}
