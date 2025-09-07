@@ -1,0 +1,20 @@
+.highly-rated {
+  padding: 16px;
+  margin-top: 60px;
+
+  @include on-desktop {
+    margin: 0 auto;
+    max-width: 1320px;
+  }
+
+  &__main {
+    display: block;
+    width: 343px;
+    height: 343px;
+    border-radius: 8px;
+  }
+
+  .product-img {
+    border-radius: 8px;
+  }
+}

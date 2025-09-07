@@ -50,3 +50,61 @@ document.querySelectorAll(".faq__item").forEach((item) => {
     toggle.classList.toggle("active");
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const colorButtons = document.querySelectorAll(".product__to-choose-item");
+  const variants = document.querySelectorAll(".product__variant");
+
+  colorButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const selectedColor = btn.dataset.color;
+
+      colorButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      variants.forEach((variant) => {
+        if (variant.dataset.color === selectedColor) {
+          variant.classList.add("active");
+
+          const mainImg = variant.querySelector(".highly-rated__main");
+          const firstThumb = variant.querySelector(".product__item");
+          if (firstThumb) {
+            mainImg.src = firstThumb.src;
+            variant
+              .querySelectorAll(".product__item")
+              .forEach((t) => t.classList.remove("active"));
+            firstThumb.classList.add("active");
+          }
+        } else {
+          variant.classList.remove("active");
+        }
+      });
+    });
+  });
+
+  variants.forEach((variant) => {
+    const mainImg = variant.querySelector(".highly-rated__main");
+    const thumbs = variant.querySelectorAll(".product__item");
+
+    thumbs.forEach((thumb) => {
+      thumb.addEventListener("click", () => {
+        mainImg.src = thumb.src;
+
+        thumbs.forEach((t) => t.classList.remove("active"));
+        thumb.classList.add("active");
+      });
+    });
+  });
+
+  document.querySelectorAll(".product__thumbs").forEach((thumbsBlock) => {
+    new Swiper(thumbsBlock, {
+      slidesPerView: 4,
+      spaceBetween: 16,
+      breakpoints: {
+        320: { slidesPerView: 3, spaceBetween: 16 },
+        768: { slidesPerView: 4, spaceBetween: 16 },
+        1024: { slidesPerView: 5, spaceBetween: 16 },
+      },
+    });
+  });
+});
